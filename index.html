@@ -6,10 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 </head>
- <link rel="stylesheet" href="style.css">
- <script src="main.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+
 <body>
- <p>Hello</p>
+  <section class="container">
+    <div class="editor">
+      <div class="html5">
+        <span>HTML</span>
+        <textarea id="html" onkeyup="codechange()"></textarea>
+      </div>
+    </div>
+    <div class="output">
+      <iframe id="playground"></iframe>
+    </div>
+  </section>
 </body>
 
 </html>
